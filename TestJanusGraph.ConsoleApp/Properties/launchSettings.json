@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TestJanusGraph.ConsoleApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

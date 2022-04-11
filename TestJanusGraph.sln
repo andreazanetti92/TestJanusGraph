@@ -3,9 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJanusGraph.ConsoleApp", "TestJanusGraph.ConsoleApp\TestJanusGraph.ConsoleApp.csproj", "{E01B3835-D79A-4766-B883-A70B35862E6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestJanusGraph.ConsoleApp", "TestJanusGraph.ConsoleApp\TestJanusGraph.ConsoleApp.csproj", "{E01B3835-D79A-4766-B883-A70B35862E6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestJanusGraph.WebAPI", "TestJanusGraph.WebAPI\TestJanusGraph.WebAPI.csproj", "{70C722E0-8A03-4ABB-9195-CEAB77892796}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestJanusGraph.WebAPI", "TestJanusGraph.WebAPI\TestJanusGraph.WebAPI.csproj", "{70C722E0-8A03-4ABB-9195-CEAB77892796}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{74E7041F-5C30-4F72-89B0-A93501CDA05C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{2CF565D0-BEF8-41C1-AFF1-DC94E6E60FCC}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\janusgraph\scripts\air-routes.groovy = ..\..\..\Desktop\janusgraph\scripts\air-routes.groovy
+		..\..\..\Desktop\janusgraph\scripts\load-air-routes-graph.groovy = ..\..\..\Desktop\janusgraph\scripts\load-air-routes-graph.groovy
+		..\..\..\Desktop\janusgraph\scripts\remote-connect.groovy = ..\..\..\Desktop\janusgraph\scripts\remote-connect.groovy
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "mydata", "mydata", "{2C91845C-8D3B-449C-86C6-31E311335B93}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\janusgraph\mydata\air-routes.graphml = ..\..\..\Desktop\janusgraph\mydata\air-routes.graphml
+		..\..\..\Desktop\janusgraph\mydata\Readme.md = ..\..\..\Desktop\janusgraph\mydata\Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "conf", "conf", "{553F283A-BA16-45B2-A5AB-40689591C705}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\janusgraph\conf\gremlin-server-air-routes.yaml = ..\..\..\Desktop\janusgraph\conf\gremlin-server-air-routes.yaml
+		..\..\..\Desktop\janusgraph\conf\Readme.md = ..\..\..\Desktop\janusgraph\conf\Readme.md
+		..\..\..\Desktop\janusgraph\conf\tinkergraph-empty.properties = ..\..\..\Desktop\janusgraph\conf\tinkergraph-empty.properties
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7BFE6683-B82C-43A2-AB59-801F8243B38B}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +48,10 @@ Global
 		{70C722E0-8A03-4ABB-9195-CEAB77892796}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70C722E0-8A03-4ABB-9195-CEAB77892796}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70C722E0-8A03-4ABB-9195-CEAB77892796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74E7041F-5C30-4F72-89B0-A93501CDA05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E7041F-5C30-4F72-89B0-A93501CDA05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E7041F-5C30-4F72-89B0-A93501CDA05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E7041F-5C30-4F72-89B0-A93501CDA05C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
